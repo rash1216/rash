@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Popup Window Example</title>
+<script>
+function openPopup() {
+    // Define the content to be displayed in the popup window
+    var content = "hi";
+
+    // Open the popup window
+    var popupWindow = window.open("", "_blank", "width=200,height=100");
+    
+    // Write the content to the popup window
+    popupWindow.document.write(content);
+}
+</script>
+</head>
+<body>
+
+<!-- Button to trigger the popup window -->
+<button onclick="openPopup()">Open Popup</button>
+
+</body>
+</html>
